@@ -32,22 +32,50 @@
     --contacts-color:#2196F3;
 }
 
-/* body section */
-
+/* header section */
 body {
-    font-family: Roboto, sans-serif;
-    color:var(--body-color);
+font-family: Roboto, sans-serif;
+color:var(--body-color);
 }
 
-/* header section */
+.logo {
+font-family: Raleway;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color:var(--logo-color);
+}
+
+.second_logo_color {
+color:var(--third-logo-color);
+}
 
 .header_link {
-font-style: normal;
 font-weight: 500;
 font-size: 14px;
-line-height: 1.33;
+line-height: 1.14;
 letter-spacing: 0.02em;
+text-decoration: none;
 color:var(--header-link)
+}
+
+.header_link_portfolio {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+text-decoration: none;
+color:var(--contacts-color)
+}
+
+.header_link_studio {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+text-decoration: none;
+color: var(--contacts-color);
 }
 
 .header_link:hover, 
@@ -55,8 +83,36 @@ color:var(--header-link)
     color:var(--header-link-second);
 }
 
-.logo, 
-.header_link, 
+.header_link_mail {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14x;
+letter-spacing: 0.02em;
+color:var(--link-color);
+}
+
+.header_link_mail:hover, 
+.header_link_mail:focus {
+    color:var(--second-link-color);
+}
+
+.header_link_tel {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color:var(--tel-color);
+}
+
+.header_link_tel:hover, 
+.header_link_tel:focus,
+.footer_mail {
+ color:var(--extra-tel-color);
+}
+
+/* main section */
+
+.logo,  
 .header_link_mail, 
 .header_link_tel, 
 .footer_address, 
@@ -74,39 +130,9 @@ color:var(--header-link)
     list-style: none;
 }
 
-.header_link_mail {
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14x;
-letter-spacing: 0.02em;
-color:var(--link-color);
-}
-
-.header_link_mail:hover, 
-.header_link_mail:focus {
-    color:var(--second-link-color);
-}
-
-.header_link_tel {
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color:var(--tel-color);
-}
-
-.header_link_tel:hover, 
-.header_link_tel:focus,
-.footer_mail {
-    color:var(--extra-tel-color);
-}
-
 /* main section */
 
 .main_title {
-font-style: normal;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -121,7 +147,7 @@ color:var(--main-color);
 }
 
 .btn {
-font-family: Roboto;
+font-family:inherit;
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
@@ -139,7 +165,6 @@ color: var(--btn-color);
 }
 
 .main_h {
-font-style: normal;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
@@ -148,7 +173,6 @@ color:var(--main-h);
 }
 
 .main_text {
-font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -157,7 +181,6 @@ color:var(--main-text);
 }
 
 .about {
-font-style: normal;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
@@ -166,7 +189,6 @@ color:var(--about-color);
 }
 
 .team {
-font-style: normal;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
@@ -175,7 +197,6 @@ color:var(--team-color);
 }
 
 .team_name {
-font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
@@ -185,7 +206,6 @@ color:var(--team-name-color);
 }
 
 .team_post {
-font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.18;
@@ -194,20 +214,8 @@ letter-spacing: 0.03em;
 color:var(--team-post);
 }
 
-.logo {
-font-family: Raleway;    
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-color:var(--logo-color);
-}
 .footer_logo_color {
     color:var(--second-logo-color);
-}
-.second_logo_color {
-    color:var(--third-logo-color);
 }
 
 .footer {
@@ -215,7 +223,6 @@ color:var(--logo-color);
 }
 
 .footer_address {
-font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -224,8 +231,7 @@ color:var(--footer-add);
 }
 
 .footer_mail {
-font-style: normal;
-font-weight: normal;
+font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -233,8 +239,7 @@ color:var(--footer-contacts);
 }
 
 .footer_tel {
-font-style: normal;
-font-weight: normal;
+font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -263,17 +268,15 @@ color:var(--contacts-color);
 }
 
 .main_services {
-font-style: normal;
-font-weight: bold;
+font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color:var(--services-color);
 }
 
-.main_proposal {
-font-style: normal;
-font-weight: normal;
+.main_proposal {  
+font-weight: 400;
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.03em;
@@ -281,8 +284,7 @@ color:var(--proposal-color);
 }
 
 .portfolio_btn {
-font-family: Roboto;
-font-style: normal;
+font-family: inherit;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
